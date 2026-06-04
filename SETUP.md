@@ -51,14 +51,14 @@ See the official llama.cpp documentation for detailed build instructions for you
 Recommended approach:
 
 - Use `huggingface-cli` or direct downloads from Hugging Face
-- Prefer `.safetensors` or GGUF quantized versions
+- Prefer GGUF quantized versions for llama.cpp
 - Place models in a dedicated `models/` directory (not tracked in this repo)
 
 Example structure:
 ```
 models/
-├── Qwen3.5-32B-Q4_K_M.gguf
-└── Gemma-2-9B-Q5_K_M.gguf
+├── your-primary-model-Q4_K_M.gguf
+└── your-secondary-model-Q5_K_M.gguf
 ```
 
 ## Step 4: Configure Dual-Model Deployment
@@ -114,7 +114,7 @@ After inference is running:
 - **Out of memory errors**: Reduce context length, use more aggressive quantization, or lower batch size
 - **Slow generation**: Check GPU utilization and ensure TurboQuant/expert offloading is enabled
 - **Port conflicts**: Change the ports in your launch configuration
-- **Model loading failures**: Verify file paths and that the models are in supported GGUF or safetensors format
+- **Model loading failures**: Verify file paths and that the models are in supported GGUF format
 
 ## Next Steps
 
