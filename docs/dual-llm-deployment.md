@@ -31,8 +31,8 @@ The secondary model often acts as a "helper" that handles frequent, lower-comple
 
 Each model runs as its own llama.cpp server instance on a different port:
 
-- Primary model: typically port `11434`
-- Secondary model: typically port `11435`
+- Primary model: typically port `8080`
+- Secondary model: typically port `8081`
 
 Benefits of separate ports:
 - Clear isolation between models
