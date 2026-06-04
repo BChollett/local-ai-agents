@@ -64,8 +64,10 @@ See `SETUP.md` for full installation, model download recommendations, and port c
 ```
 local-ai-agents/
 ├── README.md
-├── ARCHITECTURE.md          # System design and data flow
-├── SETUP.md                 # Installation and hardware notes
+├── ARCHITECTURE.md
+├── SETUP.md
+├── LICENSE
+├── .gitignore
 ├── docs/
 │   ├── hardware-specs.md
 │   ├── model-optimization.md
@@ -77,11 +79,8 @@ local-ai-agents/
 │   ├── agent-tools/
 │   └── orchestration-patterns/
 ├── scripts/
-│   ├── setup-llama-cpp.sh
-│   ├── start-dual-models.sh
-│   └── benchmark-local.sh
+│   └── start-dual-models.sh
 └── assets/
-    └── diagrams/
 ```
 
 ## Architecture Overview
