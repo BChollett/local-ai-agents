@@ -65,8 +65,8 @@ models/
 
 The system runs two models on separate ports:
 
-- **Primary model** (port 11434 by default): Higher capability model for complex reasoning and coding tasks
-- **Secondary model** (port 11435 by default): Lighter/faster model optimized for tool use and orchestration
+- **Primary model** (port 8080 by default): Higher capability model for complex reasoning and coding tasks
+- **Secondary model** (port 8081 by default): Lighter/faster model optimized for tool use and orchestration
 
 Edit the launch scripts in `scripts/` or create your own configuration files to match your model paths and desired ports.
 
@@ -84,7 +84,7 @@ Once running, you should have two llama.cpp server instances listening on their 
 Test basic inference:
 
 ```bash
-curl http://localhost:11434/v1/completions \
+curl http://localhost:8080/v1/completions \
   -H "Content-Type: application/json" \
   -d '{
     "prompt": "Explain TurboQuant in one sentence.",
@@ -92,7 +92,7 @@ curl http://localhost:11434/v1/completions \
   }'
 ```
 
-Repeat for the secondary port (usually 11435).
+Repeat for the secondary port (usually 8081).
 
 ## Resource Usage Notes
 
