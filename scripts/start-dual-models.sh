@@ -5,11 +5,11 @@
 
 # Primary model (stronger reasoning model)
 PRIMARY_MODEL="models/your-primary-model.gguf"
-PRIMARY_PORT=11434
+PRIMARY_PORT=8080
 
 # Secondary model (lighter / tool-focused model)
 SECONDARY_MODEL="models/your-secondary-model.gguf"
-SECONDARY_PORT=11435
+SECONDARY_PORT=8081
 
 # Common llama.cpp server flags (adjust as needed)
 COMMON_FLAGS="--ctx-size 8192 --n-gpu-layers 99 --host 0.0.0.0"
