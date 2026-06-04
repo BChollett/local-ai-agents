@@ -56,7 +56,7 @@ This is the "brain" that coordinates work across models and tools.
 **Key technologies:**
 - Hermes Agent framework (self-improving agents, skill creation, memory)
 - OpenClaw (agent runtime and tool integration)
-- Custom orchestration logic (referred to internally as "Clio" patterns)
+- Custom orchestration logic and coordination patterns
 
 **Responsibilities:**
 - Task decomposition and routing between models
