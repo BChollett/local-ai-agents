@@ -1,0 +1,93 @@
+# Local AI / LLM / Agent Development
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# Virtual environments
+.env
+.venv
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+
+# Secrets and environment variables
+.env*
+*.env
+secrets/
+config/local*
+
+# Model files and large artifacts (use Git LFS if you want to track specific models)
+*.gguf
+*.bin
+*.safetensors
+*.pt
+*.pth
+*.ckpt
+models/
+weights/
+checkpoints/
+
+# llama.cpp / inference build artifacts
+llama.cpp/
+build/
+*.o
+*.a
+
+# TurboQuant / custom quantization artifacts
+*.quant
+*.turbo*
+
+# IDE and editor
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Logs and temporary files
+*.log
+logs/
+tmp/
+temp/
+
+# Jupyter Notebook
+.ipynb_checkpoints
+
+# ComfyUI / workflow caches (if you ever add image workflows later)
+ ComfyUI/
+user/
+output/
+
+# General cache
+.cache/
+.pytest_cache/
